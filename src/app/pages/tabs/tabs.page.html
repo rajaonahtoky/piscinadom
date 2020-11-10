@@ -1,0 +1,28 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home-outline"></ion-icon>
+      <ion-label>Accueil</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="entretien">
+      <ion-icon name="document-text-outline"></ion-icon>
+      <ion-label>Entretien</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="sav">
+      <ion-icon name="call-outline"></ion-icon>
+      <ion-label>SAV</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="shop">
+      <ion-icon name="card-outline"></ion-icon>
+      <ion-label>Le Shop</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button (click)="presentPlus($event)">
+      <ion-icon name="menu-outline"></ion-icon>
+      <ion-label>Plus</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

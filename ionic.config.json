@@ -1,0 +1,7 @@
+{
+  "name": "piscinadom",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,29 @@
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>-->
+
+<ion-content class="content-login-intro">
+  <section class="login-intro">
+    <div class="title-login-intro">
+      <h1>
+        Piscinadom<br />
+        Le Shop Mobile
+      </h1>
+    </div>
+    <div class="list-btn-intro-login">
+      <ion-button (click)="signInWithGoogle()" class="btn-login-google">
+        Google
+      </ion-button>
+      <ion-button (click)="signInWithFacebook()" class="btn-login-facebook">
+        Facebook
+      </ion-button>
+      <ion-button class="btn-login-apple"> Apple </ion-button>
+      <ion-button class="btn-login-telephone"> Téléphone </ion-button>
+      <ion-button routerLink="/login-email" class="btn-login-email">
+        email
+      </ion-button>
+    </div>
+  </section>
+</ion-content>

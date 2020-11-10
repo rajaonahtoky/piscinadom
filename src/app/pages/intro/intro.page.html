@@ -1,0 +1,30 @@
+<ion-content fullscreen="true">
+  <section class="slide-home">
+    <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" >
+      <ion-slide *ngFor="let slide of slidesData">
+        <img [src]="slide.image" alt="" />
+        <div class="absolute caption-slider">
+          <div *ngIf="isBeginning">
+            <h6>Piscinadom</h6>
+            <p>
+              <strong>{{ slide.description }}</strong><br />
+              {{ slide.title}}
+            </p>
+          </div>
+          <div *ngIf="!isBeginning">
+            <p>
+              {{ slide.description }}
+              <strong>{{ slide.title}}</strong>
+            </p>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </section>
+  <section class="bg-color-slide relative">
+    <ion-button (click)="startApp()"  class="absolute btn-intro">
+      Entrez
+    </ion-button>
+  </section>
+  
+</ion-content>

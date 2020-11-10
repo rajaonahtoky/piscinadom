@@ -1,0 +1,22 @@
+ion-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  ion-toolbar {
+    --padding-top: 2rem;
+    --padding-start: 1rem;
+    --padding-end: 1rem;
+    border-radius: 0 0 0 70px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  ion-title {
+    height: 90%;
+  }
+  
+  .button-end {
+    margin-top: 1rem;
+  }

@@ -1,0 +1,45 @@
+.sign-in-content {
+    --background: linear-gradient(#00A3F3, #00CEFA);
+}
+.form-login-email {
+    padding: 100px 30px 0 30px;
+}
+.logo-login-email {
+    margin-bottom: 50px;
+}
+.input-list-login-email{
+    background: transparent;
+}
+.input-login-email{
+    --border-width: 0 0 3px 0 !important;
+    margin-bottom: 30px;
+    --background: transparent;
+    --border-color: #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.btn-login-email{
+    --background: #A0ED00;
+    --border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.forgot-password ion-button {
+    --background: transparent;
+    font-size: 16px;
+    font-weight: 400;
+}
+.remove-form {
+    padding-top: 190px;
+}
+.bloc-remove-form {
+    padding: 0 30px;
+}
+.bloc-remove-form ion-button {
+    font-size: 20px;
+    font-weight: 600;
+    --border-radius: 50px;
+    width: 100%;
+    --background: #8B8B8B;
+}

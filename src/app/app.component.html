@@ -1,0 +1,50 @@
+<ion-app>
+<ion-split-pane contentId="main-content">
+  <ion-menu contentId="main-content" type="push">
+    <ion-content class="content-menu">
+      <section class="header-menu">
+        <div class="title-menu">
+          <h1>
+            Votre<br/> 
+            Application <br/>
+            Piscinadom
+          </h1>
+        </div>
+      </section>
+      <section class="list-menu">
+        <a href="/dashboard/entretien">
+          <div class="menu-entretien">
+            <h2>Votre entretien</h2>
+            <span>& contrats d'entretiens</span>
+          </div>
+        </a>
+
+        <a href="/dashboard/sav">
+          <div class="menu-entretien menu-demande">
+            <h2>Vos demandes</h2>
+            <span>Interventions & SAV</span>
+          </div>
+        </a>
+
+        <a href="/dashboard/shop">
+          <div class="menu-entretien menu-shop">
+            <h2>Le Shop</h2>
+            <span>128 topics - 4k articles</span>
+          </div>
+        </a>
+
+        <a href="/dashboard/profile">
+          <div class="menu-entretien menu-profil">
+            <div class="img-profil">
+              <img src="assets/images/profile-photo-square.jpg" alt="">
+            </div>
+            <h2>Votre profil</h2>
+            <span>vos informations</span>
+          </div>
+        </a>
+      </section>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

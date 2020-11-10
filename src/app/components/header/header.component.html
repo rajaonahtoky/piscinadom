@@ -1,0 +1,17 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar class="ion-color" [style.background-color]="bgColor">
+    <ion-buttons class="ion-align-self-start" slot="start">
+      <ion-menu-button *ngIf="!back" [color]="color"></ion-menu-button>
+      <ion-back-button *ngIf="back" defaultHref="/dashboard/home" 
+        text="" 
+        icon="arrow-back-outline" [color]="color">
+      </ion-back-button>
+    </ion-buttons>
+    <div [style.color]="color">
+      <ng-content select=".title"></ng-content>
+    </div>
+    <ion-buttons class="ion-align-self-start button-end" slot="end">
+      <ion-button [color]="color"><ion-icon [name]="iconEnd"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>

@@ -1,0 +1,64 @@
+.relative{position: relative;}
+.absolute{position: absolute;}
+ion-slides {
+  --bullet-background-active: white;
+}
+.slide-home ion-slide img{
+  width: 100%;
+  object-fit: cover;
+  height: 654px;
+}
+.slide-home .swiper-container{
+  overflow: visible;
+}
+.swiper-pagination.swiper-pagination-bullets{
+  bottom: 126px !important;
+  left: 40% !important;
+}
+.bg-color-slide{
+  background: linear-gradient(#00A3F3 , #00CEFA);
+  width: 100%;
+  height: 160px;
+}
+ion-content {
+  --background: #00CEFA
+}
+.caption-slider {
+  background: #352641;
+  width: 90%;
+  right: 0;
+  bottom: -75px;
+  border-radius: 0 0 0 75px;
+  padding:35px;
+  text-align:left;
+  height: 196px;
+}
+.caption-slider h6 {
+  margin: 0;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.caption-slider p {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 35px;
+  margin: 0;
+}
+.btn-intro{
+  --background: #D47FA6;
+  z-index: 99;
+  right: -2px;
+  top:45px;
+  --border-radius: 50px 0 0 50px;
+  --padding-start: 50px;
+  --padding-end: 65px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bg-color-slide .arrow-enter {
+  position: absolute;
+  right: -50px;
+}

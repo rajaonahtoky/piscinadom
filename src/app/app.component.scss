@@ -1,0 +1,73 @@
+ion-tab-button {
+    --color-selected: #DB4C00;
+  }
+  .header-menu{
+    background: url("/assets/images/bg-head.png") no-repeat center center / cover;
+    padding: 10px 0 50px 145px;
+    border-bottom-left-radius: 70px;
+  }
+  .title-menu h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+  }
+  .content-menu{
+    --background: url("/assets/images/bg.png") no-repeat center center;
+  }
+  .list-menu {
+    padding-left: 62px;
+  
+    a {
+      text-decoration: none;
+    }
+  }
+  .menu-entretien {
+    background: #4EBDEF;
+    padding: 28px 20px 30px 35px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    z-index: 4;
+    --background: transparent;
+    --border-color: transparent;
+  }
+  .menu-entretien h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .menu-entretien span {
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.72;
+  }
+  .menu-demande{
+    background: #455D9D;
+    position: relative;
+    z-index: 3;
+    margin-top: -43px;
+    padding: 65px 20px 30px 35px;
+  }
+  .menu-shop{
+    background: #132641;
+    position: relative;
+    z-index: 2;
+    margin-top: -43px;
+    padding: 65px 20px 30px 35px;
+  }
+  .menu-profil{
+    background: #FFC603;
+    position: relative;
+    z-index: 1;
+    margin-top: -43px;
+    padding: 65px 20px 30px 35px;
+  }
+  .img-profil {
+    margin-left: 27px;
+  }
+  .img-profil img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
