@@ -1,0 +1,23 @@
+<app-header bgColor="#455D9D">
+  <div class="title">
+    <h1>Le Shop</h1>
+  </div>
+</app-header>
+
+<ion-content fullscreen>
+  <ion-list>
+    <section *ngFor="let shop of shops">
+      <div class="photo" [ngStyle]="{'background-image': 'url(' + shop.imageUrl + ')'}">
+        <div class="infos">
+          <span>{{shop.comments}}<ion-icon name="document-text-outline"></ion-icon></span>
+          <span class="ion-padding-start">{{shop.likes}}<ion-icon name="heart-outline"></ion-icon>
+          </span>
+        </div>
+      </div>
+      <div>
+        <p class="title">{{shop.title}}</p>
+        <p class="date">{{shop.date}}</p>
+      </div>
+    </section>
+  </ion-list>
+</ion-content>

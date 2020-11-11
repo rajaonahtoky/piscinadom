@@ -1,0 +1,150 @@
+app-header {
+  .title {
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+    color: #FFFFFF;
+    font-size: 26px;
+
+    h1 {
+      font-family: "Montserrat Bold";  
+      margin-bottom: 0;
+      text-align: left;
+    }
+    h2 {
+      font-family: "Montserrat Regular";
+      margin-top: 1px;
+      text-align: left;
+    }
+  }
+}
+.bg-header {
+  background: url("/assets/images/table.jpg") no-repeat center center / cover;
+  height: 10rem;
+}
+
+.content-entretien{
+  background: #F1F0F2;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 0 70px 0 0;
+  margin-top: -4rem;
+}
+.title-page-entretien h2 {
+  margin: 0;
+  margin-bottom: 1px;
+  font-size: 28px;
+  font-family: "Montserrat Bold";
+  color: #241332;
+}
+.city-entretien {
+  font-size: 14px;
+  font-weight: 400;
+  color: #998FA2;
+}
+.btn-organiser ion-button {
+  --background: #8A56AC;
+  font-size: 11px;
+  font-family: "Montserrat Bold";
+  --border-radius: 0 25px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  --padding-start: 20px;
+  --padding-end: 20px;
+}
+.radius {
+  background: #F1F0F2;
+  position: absolute;
+  width: 100%;
+  height: 75px;
+  bottom: 0;
+  z-index: 999;
+  border-top-right-radius: 90px;
+}
+.bloc-title-entretien {
+  margin-bottom: 1rem;
+}
+.bloc-historique {
+  background: #FFFFFF;
+  border-radius: 40px;
+  padding: 15px;
+}
+.list-planning{
+  text-align: center;
+}
+.list-planning ion-icon {
+  font-size: 22px;
+}
+.list-planning h4 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #78849E;
+}
+.row-historique {
+  border-bottom: solid 1px rgb(153 143 162 / 0.14);
+}
+.row-detail {
+  margin-top: 25px;
+}
+.color-historique ion-icon{
+  color: #9599B3;
+}
+.color-planning ion-icon{
+  color: #D47FA6;
+}
+.color-map ion-icon{
+  color: #8A56AC;
+}
+.color-detail ion-icon{
+  color: #817889;
+}
+.bloc-profil-entretien {
+  margin-top: 15px;
+  position: relative;
+  padding: 30px;
+}
+.profil-entretien img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+}
+.name-profil-entretien {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 12px;
+  color: #352641;
+  font-weight: 400;
+}
+.name-profil-entretien strong{
+  font-size: 16px;
+  color: #241332;
+}
+.angle-down-profil {
+  float: right;
+  margin-top: -31px;
+  font-size: 21px;
+}
+.angle-down-profil ion-icon{
+  color: #78849E;
+}
+.text-entretien p {
+  font-size: 13px;
+  color: #817889;
+  font-weight: 400;
+}
+.msg-entretien span {
+  font-size: 12px;
+  color: #817889;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 5px;
+}
+.msg-entretien ion-icon {
+  font-size: 20px;
+  color: #757575;
+  font-weight: 700;
+  vertical-align: bottom;
+}

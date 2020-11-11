@@ -7,7 +7,7 @@ import { IntroGuard } from './guards/intro.guard';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/login-intro',
+    redirectTo: '/login/intro',
     pathMatch: 'full'
   },
   {
@@ -15,14 +15,23 @@ const routes: Routes = [
     loadChildren: () => import('./pages/intro/intro.module').then(m => m.IntroPageModule),
   },
   {
-    path: 'login-intro',
-    loadChildren: () => import('./pages/auth/login-intro/login-intro.module').then(m => m.LoginIntroPageModule),
-    canLoad: [IntroGuard, AutoLoginGuard]
-  },
-  {
-    path: 'login-email',
-    loadChildren: () => import('./pages/auth/login-email/login-email.module').then(m => m.LoginEmailPageModule),
-    //canLoad: [IntroGuard, AutoLoginGuard]
+    path: 'login',
+    children: [
+      {
+        path: 'intro',
+        loadChildren: () => import('./pages/auth/login-intro/login-intro.module').then( m => m.LoginIntroPageModule),
+        canLoad: [IntroGuard, AutoLoginGuard]
+      },
+      {
+        path: 'email',
+        loadChildren: () => import('./pages/auth/login-email/login-email.module').then( m => m.LoginEmailPageModule),
+        canLoad: [IntroGuard, AutoLoginGuard]
+      },
+      {
+        path: 'lost-password',
+        loadChildren: () => import('./pages/auth/lost-password/lost-password.module').then( m => m.LostPasswordPageModule)
+      }
+    ]
   },
   {
     path: 'tabs',

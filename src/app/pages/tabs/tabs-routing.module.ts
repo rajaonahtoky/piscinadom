@@ -5,7 +5,7 @@ import { TabsPage } from './tabs.page';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/tabs/home',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
@@ -17,8 +17,28 @@ const routes: Routes = [
         loadChildren: () =>
           import('../home/home.module').then((m) => m.HomePageModule),
       },
+      {
+        path: 'entretien',
+        loadChildren: () => import('../entretien/entretien.module').then( m => m.EntretienPageModule)
+      },
+      {
+        path: 'sav',
+        loadChildren: () => import('../sav/sav.module').then( m => m.SavPageModule)
+      },
+      {
+        path: 'shop',
+        loadChildren: () => import('../shop/shop.module').then( m => m.ShopPageModule)
+      }
     ],
   },
+  {
+    path: 'profile',
+    loadChildren: () => import('../profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('../admin/admin.module').then( m => m.AdminPageModule)
+  }
 ];
 
 @NgModule({

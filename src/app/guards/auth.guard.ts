@@ -22,7 +22,7 @@ export class AuthGuard implements CanLoad {
         if (isAuthenticated) {
           return true;
         } else {
-          this.router.navigateByUrl('/login-intro');
+          this.router.navigateByUrl('/login/intro');
           return false;
         }
       })

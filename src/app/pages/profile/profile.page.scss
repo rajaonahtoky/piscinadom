@@ -1,0 +1,148 @@
+.toolbar-profil{
+  --border-width:0 !important;
+}
+.back-profil ion-icon, .keypad-profil ion-icon {
+  color: #241332;
+  font-size: 22px;
+  font-weight: 400;
+}
+.back-profil, .keypad-profil{
+  text-align: center;
+}
+.your-profil h1 {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.42px;
+}
+.img-profil {
+  margin-top: 7px;
+}
+.img-profil img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+.name-profil{
+  border-bottom-left-radius: 70px;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 20px;
+  z-index: 99;
+  bottom: -74px;
+}
+.name-profil h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #241332;
+  margin-bottom: 2px;
+  margin-top: 5px;
+}
+.name-profil span {
+  font-size: 14px;
+  color: #78849E;
+}
+.follow-profil {
+  background: url("/assets/images/bg-img-profil.jpg") no-repeat center center / cover;
+}
+.following span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.following p {
+  margin: 0;
+  font-size: 11px;
+  color: #fff;
+  opacity: 0.65;
+}
+.follow-profil {
+  position: relative;
+  z-index: 9;
+  border-bottom-left-radius: 70px;
+  margin-top: 4px;
+  padding: 90px 0 30px;
+}
+.actus-profil{
+  position: relative;
+  background:#FFC603;
+  padding: 100px 30px 15px;
+  border-bottom-left-radius: 70px;
+  margin-top: -65px;
+  z-index: 8;
+}
+.profil-entretien img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+}
+.name-profil-entretien {
+  display: inline-block;
+  margin-left: 16px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+}
+.name-profil-entretien strong{
+  font-size: 16px;
+  color: #fff;
+}
+.angle-down-profil {
+  float: right;
+  margin-top: -31px;
+  font-size: 21px;
+}
+.angle-down-profil ion-icon{
+  color: #78849E;
+}
+.content-user p {
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.65;
+  margin-bottom: 25px;
+}
+.img-content-user img{
+  width: 295px;
+  height: 104px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.msg-user {
+  text-align: right;
+  background: transparent;
+}
+.msg-user ion-item {
+  display: inline-block;
+  --background: transparent;
+  border-bottom: none !important;
+  --border-color: transparent;
+  --padding-start: 3px;
+}
+.msg-user ion-item span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #BBBCCD;
+  display: inline-block;
+  padding-right: 5px;
+}
+.msg-user ion-item ion-icon {
+  font-size: 20px;
+  font-weight: bold;
+  color: #998FA2;
+  display: inline-block;
+}
+.actus-profil-1{
+  background: #241332;
+  z-index: 7;
+  margin-bottom: 30px;
+}
+.name-user-profil{
+  opacity: 0.5;
+}

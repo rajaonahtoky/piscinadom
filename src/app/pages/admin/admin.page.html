@@ -1,0 +1,95 @@
+<ion-content fullscreen>
+  <app-header color="dark" back="true" iconEnd="settings-outline" slot="fixed">
+    <div class="title">
+      <h1>Les indicateurs</h1>
+      <p>Votre tableau de bord</p>
+      <h2>Team</h2>
+    </div>
+  </app-header>
+
+  <section class="status">
+    <div class="status-content">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1"><ion-icon style="color: #B07DD1" name="ellipse"></ion-icon></ion-col>
+          <ion-col size="7"><p class="title">SAV</p></ion-col>
+          <ion-col><div class="bar">
+            <div class="sub-bar" style="background: #B07DD1; width: 60%;"></div>
+          </div></ion-col>
+          <div class="divider"></div>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1"><ion-icon style="color: #4F8DCB" name="ellipse"></ion-icon></ion-col>
+          <ion-col size="7"><p class="title">Entretiens</p></ion-col>
+          <ion-col><div class="bar">
+            <div class="sub-bar" style="background: #4F8DCB; width: 80%;"></div>
+          </div></ion-col>
+          <div class="divider"></div>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1"><ion-icon style="color: #5F4591" name="ellipse"></ion-icon></ion-col>
+          <ion-col size="7"><p class="title">Produits</p></ion-col>
+          <ion-col><div class="bar">
+            <div class="sub-bar" style="background: #5F4591; width: 35%;"></div>
+          </div></ion-col>
+          <div class="divider"></div>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1"><ion-icon style="color: #9599B3" name="ellipse"></ion-icon></ion-col>
+          <ion-col size="7"><p class="title">Utilisation</p></ion-col>
+          <ion-col><div class="bar">
+            <div class="sub-bar" style="background: #9599B3; width: 60%;"></div>
+          </div></ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </section>
+
+  <section class="rendez-vous">
+    <ion-icon name="chevron-down-outline"></ion-icon>
+    <div class="rendez-vous-content">
+      <h1>47<span>rendez-vous</span></h1>
+      <ion-row>
+        <ion-col>
+          <p class="details">Détails</p>
+        </ion-col>
+        <ion-col>
+          <p class="settings">paramètres</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </section>
+
+  <section class="graphics">
+    <p class="graphics-title">Graphiques</p>
+    <ion-slides [options]="options">
+      <ion-slide>
+        <div class="box">
+          <ion-icon size="large" name="partly-sunny-outline"></ion-icon><br><br>
+          <div>
+            <p>Entretiens</p>
+            <h2>405 évènements</h2>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box">
+          <ion-icon size="large" name="sunny-outline"></ion-icon><br><br>
+          <div>
+            <p>SAV</p>
+            <h2>347 évènements</h2>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="box">
+          <ion-icon size="large" name="bug-outline"></ion-icon><br><br>
+          <div>
+            <p>Produits</p>
+            <h2>163 évènements</h2>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </section>
+</ion-content>

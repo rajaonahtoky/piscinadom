@@ -1,5 +1,6 @@
 export const environment = {
   production: true,
+  API_URL: 'http://demo4792862.mockable.io/',
   firebase: {
     apiKey: "AIzaSyB5GQRpBFThIQ94WCf0E0Z9V2gfYBSIonI",
     authDomain: "piscinadom-dev.firebaseapp.com",
