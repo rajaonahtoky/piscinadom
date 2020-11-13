@@ -19,12 +19,13 @@ export class AutoLoginGuard implements CanLoad {
       filter(val => val !== null),
       take(1),
       map(isAuthenticated => {
-        if (isAuthenticated)
+        if (isAuthenticated) {
           this.router.navigateByUrl('/tabs', { replaceUrl: true });
-        else    
+        } else {
           return true;
+        }
       })
-    )
+    );
   }
   
 }

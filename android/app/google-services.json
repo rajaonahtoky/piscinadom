@@ -1,50 +1,35 @@
 {
   "project_info": {
-    "project_number": "552951788156",
-    "firebase_url": "https://piscinadom-dev.firebaseio.com",
-    "project_id": "piscinadom-dev",
-    "storage_bucket": "piscinadom-dev.appspot.com"
+    "project_number": "541429891813",
+    "firebase_url": "https://piscinadom-app.firebaseio.com",
+    "project_id": "piscinadom-app",
+    "storage_bucket": "piscinadom-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:552951788156:android:734c0055b8b38e8dff0ff9",
+        "mobilesdk_app_id": "1:541429891813:android:724bb2413c792d2db48a0c",
         "android_client_info": {
-          "package_name": "io.ionic.starter"
+          "package_name": "re.cbleu.piscinadom"
         }
       },
       "oauth_client": [
         {
-          "client_id": "552951788156-72ml0611mp1pt1jchfoots0vn2d37jch.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "io.ionic.starter",
-            "certificate_hash": "2a707cbd783346dcdf2ba2e91195308d32661e63"
-          }
-        },
-        {
-          "client_id": "552951788156-faipijejoav720htd3jh7u14fttp20vv.apps.googleusercontent.com",
+          "client_id": "541429891813-r8603tb1nail4uc62pm64ub17lvk2cb3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDCG2v0sIIsFGhx94zerfLpMcPG_IeVmXs"
+          "current_key": "AIzaSyBUD4DknAZCwWxUp_9mhZnUScBc3z_UWJQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "552951788156-faipijejoav720htd3jh7u14fttp20vv.apps.googleusercontent.com",
+              "client_id": "541429891813-r8603tb1nail4uc62pm64ub17lvk2cb3.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "552951788156-m6qkcd9ujpid7djeliqp9kkf2k1us826.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "io.ionic.starter.piscinadom-dev"
-              }
             }
           ]
         }

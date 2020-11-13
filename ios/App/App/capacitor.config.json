@@ -1,13 +1,31 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "re.cbleu.piscinadom",
   "appName": "piscinadom",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
+    "CapacitorFirebaseAuth": {
+      "providers": [
+        "google.com",
+        "facebook.com",
+        "phone"
+      ],
+      "languageCode": "en",
+      "nativeAuth": false,
+      "permissions": {
+        "google": [
+          "profile"
+        ]
+      }
+    },
     "SplashScreen": {
       "launchShowDuration": 0
     }
   },
-  "cordova": {}
+  "cordova": {},
+  "server": {
+    "url": "http://192.168.123.5:8100",
+    "cleartext": true
+  }
 }

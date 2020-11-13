@@ -32,27 +32,29 @@ export class IntroPage implements OnInit {
       {
         image: 'assets/images/slide-2.jpg',
         title: 'Service d\'entretien à domicile',
-        description: 'Maitrisez la qualité de l’eau de votre piscine. Planifiez les interventions.'
+        description: 'Maitrisez la qualité de l\'eau de votre piscine. Planifiez les interventions.'
       },
       {
         image: 'assets/images/slide-3.jpg',
         title: 'Interventions et SAV',
-        description: 'Une panne ou un doute sur le fonctionnement d\’un équipement ?'
+        description: 'Une panne ou un doute sur le fonctionnement d\'un équipement ?'
       }
     ];
   }
 
   startApp() {
-    this.slides.isEnd().then((isEnd) => {
+    this.slides.isEnd().then(async (isEnd) => {
       if (isEnd) {
+        await Storage.set({ key: INTRO_KEY, value: 'true' });
+
         this.router
-        .navigateByUrl('/login-intro', { replaceUrl: true })
-        .then(async () => await Storage.set({key: INTRO_KEY, value: 'true'}));
+        .navigateByUrl('/login/intro', { replaceUrl: true });
       } else {
         this.slides.slideNext();
       }
     });
   }
+
 
   onSlideChangeStart(event) {
     event.target.isBeginning().then(isBeginning => {
@@ -63,8 +65,4 @@ export class IntroPage implements OnInit {
  ionViewWillEnter() {
     this.menu.enable(false);
   }
-
-  // ionViewDidLeave() {
-  //   this.menu.enable(true);
-  // }
 }

@@ -2,13 +2,13 @@ export const environment = {
   production: true,
   API_URL: 'http://demo4792862.mockable.io/',
   firebase: {
-    apiKey: "AIzaSyB5GQRpBFThIQ94WCf0E0Z9V2gfYBSIonI",
-    authDomain: "piscinadom-dev.firebaseapp.com",
-    databaseURL: "https://piscinadom-dev.firebaseio.com",
-    projectId: "piscinadom-dev",
-    storageBucket: "piscinadom-dev.appspot.com",
-    messagingSenderId: "552951788156",
-    appId: "1:552951788156:web:b7a0545fe6f12ffcff0ff9",
-    measurementId: "G-T7RGYZE9YZ"
+    apiKey: "AIzaSyD9yJ1FoGKx3dP2Lw9hvqKLHZsQhNxY9_M",
+    authDomain: "piscinadom-app.firebaseapp.com",
+    databaseURL: "https://piscinadom-app.firebaseio.com",
+    projectId: "piscinadom-app",
+    storageBucket: "piscinadom-app.appspot.com",
+    messagingSenderId: "541429891813",
+    appId: "1:541429891813:web:e68e721dbe2029a7b48a0c",
+    measurementId: "G-QEH7LR4LT9"
   }
 };

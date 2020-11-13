@@ -15,7 +15,7 @@ const UID_KEY = 'my-uid';
 })
 export class FirebaseAuthService {
   isAuthenticated: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(null);
-  uid: string = '';
+  uid = '';
   currentUser: User;
   userProviderAdditionalInfo: any;
   redirectResult: Subject<any> = new Subject<any>();
@@ -96,13 +96,28 @@ export class FirebaseAuthService {
           if (user != null) {
             resolve(user);
           } else {
-            reject(`login failed`);
+            reject('login failed');
           }
         }
       );
 
     });
   }
+
+  signInWithPhone() {
+    return new Promise<any>((resolve, reject) => {
+      cfaSignIn('phone').subscribe(
+        (user: User) => {
+          if (user != null) {
+            resolve(user);
+          } else {
+            reject('login failed');
+          }
+        }
+      );
+    });
+  }
+
 
   signInWithGoogle() {
     return new Promise<any>((resolve, reject) => {
@@ -111,7 +126,7 @@ export class FirebaseAuthService {
           if (user != null) {
             resolve(user);
           } else {
-            reject(`login failed`);
+            reject('login failed');
           }
         }
       );
@@ -126,7 +141,7 @@ export class FirebaseAuthService {
         // Handle Errors here.
         const errorCode = error.code;
         const errorMessage = error.message;
-        reject(`login failed ${error.message}`);
+        reject('login failed ${error.message}');
         // ...
       });
     });

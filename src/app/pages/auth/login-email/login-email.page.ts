@@ -1,7 +1,7 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-import { AngularFireAuth } from '@angular/fire/auth';
+//import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { FirebaseAuthService } from 'src/app/services/firebase-auth.service';
 import { LoadingController, MenuController } from '@ionic/angular';
@@ -11,7 +11,7 @@ import { LoadingController, MenuController } from '@ionic/angular';
   templateUrl: './login-email.page.html',
   styleUrls: ['./login-email.page.scss'],
 })
-export class LoginEmailPage {
+export class LoginEmailPage implements OnInit {
   formGroup: FormGroup;
   submitError: string;
   authRedirectResult: Subscription;
@@ -19,7 +19,7 @@ export class LoginEmailPage {
   credentials = {
     email: '',
     password: ''
-  }
+  };
 
   validation_messages = {
     'email': [
@@ -49,7 +49,7 @@ export class LoginEmailPage {
 
   unknownError = {
     frFR: 'Une erreur inattendue s\'est produite. Veuillez recommencer.'
-  }
+  };
 
   constructor(
     public router: Router,
@@ -61,10 +61,11 @@ export class LoginEmailPage {
   ) {
     this.authRedirectResult = this.authService.getRedirectResult()
     .subscribe(result => {
-      if (result.user)
+      if (result.user) {
         this.redirectAuthenticatedUser();
-      else if (result.error)
+      } else if (result.error) {
         this.treatError(result.error);
+      }
     });
   }
 
@@ -85,7 +86,7 @@ export class LoginEmailPage {
         break;
       }
     }
-
+    
     if (!findError) {
       this.submitError = this.unknownError['frFR'];
     }

@@ -5,6 +5,20 @@
   "npmClient": "npm",
   "webDir": "www",
   "plugins": {
+    "CapacitorFirebaseAuth": {
+      "providers": [
+        "google.com",
+        "facebook.com",
+        "phone"
+      ],
+      "languageCode": "fr",
+      "nativeAuth": false,
+      "permissions": {
+        "google": [
+          "profile"
+        ]
+      }
+    },
     "SplashScreen": {
       "launchShowDuration": 0
     }

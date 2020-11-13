@@ -1,11 +1,10 @@
-package io.ionic.starter;
+package re.cbleu.piscinadom;
 
 import android.os.Bundle;
 
 import com.baumblatt.capacitor.firebase.auth.CapacitorFirebaseAuth;
 import com.getcapacitor.BridgeActivity;
 import com.getcapacitor.Plugin;
-
 import java.util.ArrayList;
 
 public class MainActivity extends BridgeActivity {

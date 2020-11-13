@@ -30,6 +30,10 @@ const routes: Routes = [
       {
         path: 'lost-password',
         loadChildren: () => import('./pages/auth/lost-password/lost-password.module').then( m => m.LostPasswordPageModule)
+      },
+      {
+        path: 'phone-login',
+        loadChildren: () => import('./pages/auth/phone-login/phone-login.module').then( m => m.PhoneLoginPageModule)
       }
     ]
   },

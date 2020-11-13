@@ -19,8 +19,8 @@
       <ion-button (click)="signInWithFacebook()" class="btn-login-facebook">
         Facebook
       </ion-button>
-      <ion-button class="btn-login-apple"> Apple </ion-button>
-      <ion-button class="btn-login-telephone"> Téléphone </ion-button>
+      <ion-button *ngIf="isiOs" (click)="signInWithApple()" class="btn-login-apple"> Apple </ion-button>
+      <ion-button (click)="signInWithPhone()" class="btn-login-telephone"> Téléphone </ion-button>
       <ion-button routerLink="/login/email" class="btn-login-email">
         email
       </ion-button>

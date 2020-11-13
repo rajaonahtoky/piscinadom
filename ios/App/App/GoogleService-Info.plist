@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>552951788156-m6qkcd9ujpid7djeliqp9kkf2k1us826.apps.googleusercontent.com</string>
+	<string>541429891813-cc04crdvc1eg86d16khv8c05ddr0poks.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.552951788156-m6qkcd9ujpid7djeliqp9kkf2k1us826</string>
+	<string>com.googleusercontent.apps.541429891813-cc04crdvc1eg86d16khv8c05ddr0poks</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>552951788156-72ml0611mp1pt1jchfoots0vn2d37jch.apps.googleusercontent.com</string>
+	<string>541429891813-3o1ejgd3nklelgvc91ppcqu7m18lmj4j.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCCg3vSei75hWiDPwabRtgeYHAVrq5A8bM</string>
+	<string>AIzaSyAheu2ygQz_hjKC4eRTzuaI7MwT1GvYrZ0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>552951788156</string>
+	<string>541429891813</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>io.ionic.starter.piscinadom-dev</string>
+	<string>google-services.json</string>
 	<key>PROJECT_ID</key>
-	<string>piscinadom-dev</string>
+	<string>piscinadom-app</string>
 	<key>STORAGE_BUCKET</key>
-	<string>piscinadom-dev.appspot.com</string>
+	<string>piscinadom-app.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -31,8 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:552951788156:ios:ed55e6654315cf70ff0ff9</string>
+	<string>1:541429891813:ios:bff01e7b05271ddab48a0c</string>
 	<key>DATABASE_URL</key>
-	<string>https://piscinadom-dev.firebaseio.com</string>
+	<string>https://piscinadom-app.firebaseio.com</string>
 </dict>
 </plist>
